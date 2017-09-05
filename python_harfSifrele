@@ -1,0 +1,12 @@
+def harfSifrele():
+    while True:
+        sifreli="";
+        kelime=input("Cümlenizi Yazın:")
+        harf=input("Şifrelenecek harfi yazın:")
+        for i in kelime:
+            if i==harf:
+                sifreli+="*"
+            else:
+                sifreli+=i
+        print(sifreli)
+harfSifrele()
